@@ -8,6 +8,7 @@
 </head>
  
 　<body>
+ 　<body>
     <table class="dentaku">
     <tr>
       <td colspan="4" id="result">0</td>
@@ -15,7 +16,7 @@
 	
 		<tr>
 			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">7</button>
+			  <button type="button" class="button" onclick="clickbutton(this)">7</button>
 			</td>
 			<td class="dentakubutton">
 			  <button class="button" onclick="clickbutton(this)">8</button>
@@ -63,7 +64,7 @@
 			  <button class="button" onclick="clickbutton(this)">00</button>
 			</td>
 			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">.</button>
+			  <button class="button" id="point" onclick="clickbutton(this)">.</button>
 			</td>
 			<td class="dentakubutton">
 			  <button class="button" onclick="clickbutton(this)">/</button>
@@ -71,14 +72,16 @@
 		</tr>
 		<tr>
 			<td colspan="2">
-			  <button class="button" onclick="clickbutton(this)">AC</button>
+			  <button id="clear" class="button" onclick="clickbutton(this)">AC</button>
 			</td>
 			<td colspan="2">
-			  <button class="button" onclick="clickbutton(this)">=</button>
+			  <button id="equal"class="button" onclick="clickbutton(this)">=</button>
 			</td>
 		</tr>
 </table>
  
     <script src="main.js"></script>
+
+
   </body>
 </html>

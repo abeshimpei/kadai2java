@@ -1,4 +1,4 @@
-function clickbutton(target){
+function clickbutton(target) {
     let result = document.getElementById("result")
     let target_value = target.innerHTML;
     
@@ -10,11 +10,13 @@ function clickbutton(target){
         if (result.innerHTML == "0") {
             result.innerHTML = target_value
         } else if (result.innerHTML == "00") {
-           result.innerHTML = target_value 
+          result.innerHTML = target_value
         } else {
+           
             result.innerHTML += target_value
             
-        }
-    }    
-    
-};
+            }
+     
+    }
+ };
+
