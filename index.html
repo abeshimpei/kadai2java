@@ -6,81 +6,43 @@
      <link rel="stylesheet" href="main.css">
      <title>電卓</title>
 </head>
- 
 　<body>
- 　<body>
-    <table class="dentaku">
-    <tr>
-      <td colspan="4" id="result">0</td>
-    </tr>
-	
-		<tr>
-			<td class="dentakubutton">
-			  <button type="button" class="button" onclick="clickbutton(this)">7</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">8</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">9</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">+</button>
-			</td>
-		</tr>
-		<tr>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">4</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">5</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">6</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">-</button>
-			</td>
-		</tr>
-		<tr>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">1</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">2</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">3</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">*</button>
-			</td>
-		</tr>
-		<tr>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">0</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">00</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" id="point" onclick="clickbutton(this)">.</button>
-			</td>
-			<td class="dentakubutton">
-			  <button class="button" onclick="clickbutton(this)">/</button>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-			  <button id="clear" class="button" onclick="clickbutton(this)">AC</button>
-			</td>
-			<td colspan="2">
-			  <button id="equal"class="button" onclick="clickbutton(this)">=</button>
-			</td>
-		</tr>
-</table>
- 
-    <script src="main.js"></script>
+　 <div class = dentaku>
+　  <input type="text" id="result" value="0">
+　  <div>
+      <input class="dentakubutton" type="button" value="7" onclick="number(this)">
+      <input class="dentakubutton" type="button" value="8" onclick="number(this)">
+      <input class="dentakubutton" type="button" value="9" onclick="number(this)">
+      <input class="dentakubutton" type="button" value="/" onclick="operator(this)">
+    </div>
+    <div>
+     <input class="dentakubutton" type="button" value="4" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="5" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="6" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="*" onclick="operator(this)">
+    </div>
+    <div>
+     <input class="dentakubutton" type="button" value="1" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="2" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="3" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="-" onclick="operator(this)">
+    </div>
+    <div>
+     <input class="dentakubutton" type="button" value="0" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="00" onclick="number(this)">
+     <input class="dentakubutton" type="button" value="." onclick="number(this)">
+     <input class="dentakubutton" type="button" value="+" onclick="operator(this)">
+    </div>
+    <div>
+     <input class="clear" type="button" value="AC" onclick="acBtn()">
+     <input class="enter" type="button" value="=" onclick="equalBtn()">
+   </div>
+  </div>
+　  
+
+　  
+　  
+　    <script src="main.js"></script>
 
 
   </body>

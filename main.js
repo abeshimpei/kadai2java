@@ -1,22 +1,38 @@
-function clickbutton(target) {
-    let result = document.getElementById("result")
-    let target_value = target.innerHTML;
-    
-    if (target_value == "AC") {
-       result.innerHTML = "0"
-    } else if (target_value == "=") {
-        result.innerHTML = eval(result.innerHTML)
-    } else {
-        if (result.innerHTML == "0") {
-            result.innerHTML = target_value
-        } else if (result.innerHTML == "00") {
-          result.innerHTML = target_value
+let result = document.getElementById("result");
+
+function number(target) {
+    if (result.value == "0") {
+            result.value = target.value;
+        } else if (result.value == "00") {
+          result.value = target.value;
         } else {
-           
-            result.innerHTML += target_value
-            
+          result.value += target.value;
             }
-     
+};
+
+function operator(target) {
+    if (result.value.slice(-1) == "+"){
+    return;
+    } else if (result.value.slice(-1) == "-") {
+    return;
+    } else if (result.value.slice(-1) == "*") {
+    return;
+    } else if (result.value.slice(-1) == "/") {
+    return;
+    } else if (result.value.slice(-1) == ".") {
+    return;
+    } else {
+     result.value += target.value;
     }
- };
+};
+
+function acBtn(){
+result.value = '0';
+}
+
+function equalBtn() {
+   result.value = new Function("return " + result.value)();
+};
+    
+
 
